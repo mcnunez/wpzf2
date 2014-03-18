@@ -1,0 +1,39 @@
+<?php
+// module/Companies/view/companies/companies/index.phtml:
+
+$title = 'My Companies';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+<p>
+    <a href="<?php echo $this->url('companies', array('action'=>'add'));?>">Add new Company</a>
+</p>
+
+<table class="table">
+<tr>
+    <th>Name</th>
+    <th>User</th>
+    <th>Adress</th>
+    <th>phone</th>
+    <th>email</th>
+    <th>cities_idcity</th>
+    <th>&nbsp;</th>
+</tr>
+<?php foreach ($companies as $companie) : ?>
+<tr>
+    <td><?php echo $this->escapeHtml($companie->name);?></td>
+    <td><?php echo $this->escapeHtml($companie->id);?></td>
+    <td><?php echo $this->escapeHtml($companie->adress);?></td>
+    <td><?php echo $this->escapeHtml($companie->phone);?></td>
+    <td><?php echo $this->escapeHtml($companie->email);?></td>
+    <td><?php echo $this->escapeHtml($companie->cities_idcity);?></td>
+    
+    <td>
+        <a href="<?php echo $this->url('companies',
+            array('action'=>'edit', 'id' => $companie->idcompanie));?>">Edit</a>
+        <a href="<?php echo $this->url('companies',
+            array('action'=>'delete', 'id' => $companie->idcompanie));?>">Delete</a>
+    </td>
+</tr>
+<?php endforeach; ?>
+</table>

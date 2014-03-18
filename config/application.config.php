@@ -11,6 +11,7 @@ return array(
         'Simplemodule',
         'Album',
     	'Checklist',
+    	'Companies',	
 		'Project'
     ),
     'module_listener_options' => array(
