@@ -34,7 +34,7 @@ class CompaniesTable
 		$data = array(
 				'name'  => $companies->name,
 				'id' => $companies->id, // el idusuario
-				'address'  => $companies->adress,
+				'address'  => $companies->address,
 				'phone'  => $companies->phone,
 				'email'  => $companies->email,
 				'cities_idcity'  => $companies->cities_idcity,

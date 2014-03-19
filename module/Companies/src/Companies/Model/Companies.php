@@ -11,7 +11,7 @@ class Companies
 	public $idcompanie;
 	public $name;
 	public $id; // idusuario
-	public $adress;
+	public $address;
 	public $phone;
 	public $email;
 	public $cities_idcity;
@@ -22,7 +22,7 @@ class Companies
 		$this->idcompanie     = (isset($data['idcompanie'])) ? $data['idcompanie'] : null;
 		$this->name = (isset($data['name'])) ? $data['name'] : null;
 		$this->id  = (isset($data['id'])) ? $data['id'] : null;
-		$this->address = (isset($data['adres'])) ? $data['adres'] : null;
+		$this->address = (isset($data['addres'])) ? $data['addres'] : null;
 		$this->phone = (isset($data['phone'])) ? $data['phone'] : null;
 		$this->email = (isset($data['email'])) ? $data['email'] : null;
 		$this->cities_idcity = (isset($data['cities_idcity'])) ? $data['cities_idcity'] : null;

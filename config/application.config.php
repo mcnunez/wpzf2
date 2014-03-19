@@ -19,8 +19,8 @@ if ($env == 'development')
 			'ZendDeveloperTools',
 			'Album',
 			'Simplemodule',
-			'Debug',
 			'Checklist',
+			'Companies',
 			'Cheetara',
 	);
 }
