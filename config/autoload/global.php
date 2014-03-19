@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Global Configuration Override
@@ -39,3 +40,4 @@ return array(
 				'database' => 'data/cheatsheet.db',
 		),		
 );
+
